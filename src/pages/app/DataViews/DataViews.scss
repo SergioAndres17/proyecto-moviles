@@ -1,0 +1,250 @@
+/* Estilos generales para los items de gestión */
+.management-list {
+  background: transparent;
+  padding: 0 10px;
+}
+/* Estilos específicos para sitios turísticos */
+.tourist-site-item {
+  --min-height: 100px;
+
+  ion-thumbnail {
+    width: 80px;
+    height: 80px;
+    margin-inline-end: 12px;
+    
+    ion-img {
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  .item-main-info {
+    h2 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    
+    p {
+      font-size: 0.85rem;
+      color: var(--ion-color-medium);
+    }
+  }
+
+  .item-secondary-info {
+    p {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.85rem;
+      color: var(--ion-color-medium);
+      
+      ion-icon {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+/* Estilos específicos para facturas */
+.factura-item {
+  .item-main-info {
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .item-secondary-info {
+    p {
+      font-size: 0.9rem;
+      color: var(--ion-color-medium);
+      margin: 4px 0;
+    }
+  }
+
+  .item-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    p {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.85rem;
+      color: var(--ion-color-medium);
+      margin: 0;
+      
+      ion-icon {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* Estilos para los badges de estado */
+ion-badge {
+  &[color="success"] {
+    --background: var(--ion-color-success);
+    --color: white;
+  }
+  
+  &[color="warning"] {
+    --background: var(--ion-color-warning);
+    --color: black;
+  }
+  
+  &[color="danger"] {
+    --background: var(--ion-color-danger);
+    --color: white;
+  }
+  
+  &[color="medium"] {
+    --background: var(--ion-color-medium);
+    --color: white;
+  }
+}
+/* Estilos para el segmento de tipos */
+ion-segment {
+  padding: 0 8px;
+
+  ion-segment-button {
+    --indicator-color: var(--ion-color-primary);
+    --color: var(--ion-color-medium);
+    --color-checked: var(--ion-color-primary);
+    min-width: auto;
+    font-size: 0.8rem;
+    max-width: 120px;
+  }
+}
+/* Estilos específicos para reservaciones */
+.reservation-item {
+  .item-main-info {
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  .item-secondary-info {
+    p {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
+
+/* Estilos para el segmento de filtros */
+ion-segment {
+  padding: 0 8px;
+
+  ion-segment-button {
+    --indicator-color: var(--ion-color-primary);
+    --color: var(--ion-color-medium);
+    --color-checked: var(--ion-color-primary);
+    min-width: auto;
+    font-size: 0.8rem;
+  }
+}
+
+.management-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(239, 239, 239, 0.12);
+  }
+
+  .item-content {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+
+    
+    .item-main-info {
+      margin-bottom: 8px;
+      
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 4px 0;
+         color: white;
+      }
+      
+      p {
+        font-size: 0.9rem;
+        color: var(--ion-color-medium);
+        margin: 0;
+      }
+    }
+    
+    .item-secondary-info {
+      p {
+        font-size: 0.9rem;
+        color: var(--ion-color-medium);
+        margin: 2px 0;
+        
+        &:first-child {
+          color: var(--ion-color-primary);
+        }
+      }
+    }
+    
+    .item-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      
+      p {
+        font-size: 0.8rem;
+        color: var(--ion-color-medium);
+        margin: 0;
+      }
+    }
+  }
+  
+  .item-actions {
+    ion-button {
+      --padding-start: 6px;
+      --padding-end: 6px;
+    }
+  }
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  padding: 20px;
+  
+  p {
+    color: var(--ion-color-medium);
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Estilos para el loading */
+ion-loading {
+  --spinner-color: var(--ion-color-primary);
+}
+
+/* Ajustes para el searchbar */
+ion-searchbar {
+  padding: 8px;
+  --background: var(--ion-color-light);
+  --border-radius: 8px;
+  --box-shadow: none;
+}

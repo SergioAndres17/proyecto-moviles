@@ -1,0 +1,43 @@
+.welcome-page {
+    --background: url('../../assets/welcome-bg.jpg') no-repeat center center / cover;
+    
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+  
+    .welcome-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      }
+      
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      }
+    }
+    
+    .button-group {
+      width: 100%;
+      max-width: 300px;
+      
+      ion-button {
+        margin-bottom: 16px;
+      }
+    }
+  }

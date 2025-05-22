@@ -1,0 +1,135 @@
+.factura-page {
+    > h2 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    ion-input, ion-textarea {
+      background-color: #FFFFFF;
+      border-radius: 25px;
+      --padding-top: 15px;
+      --padding-end: 15px;
+      --padding-bottom: 15px;
+      --padding-start: 15px;
+      color: #3A8EBA;
+    }
+  
+    ion-button {
+      margin: 15px 0 0 0;
+    }
+
+    .custom-item {
+      --background: transparent !important;
+      --color: #3A8EBA;
+      border: none;
+      font-weight: bold;
+      --border-radius: 25px;
+      margin-bottom: 10px;
+      --padding-start: 0;
+    }
+    
+    .custom-icon {
+      color: #ffffff !important;
+      font-size: 1.5rem;
+    }
+  
+    .error {
+      color: #f00;
+      font-size: 0.8rem;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+  
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    .button-row ion-button {
+      flex: 1;
+    }
+
+    .selected-value {
+      color: #3A8EBA;
+    }
+
+    ion-select {
+      --placeholder-color: var(--ion-color-medium);
+      --placeholder-opacity: 1;
+    }
+}
+
+// Estilos para los modales de búsqueda
+.search-modal {
+  --width: 90%;
+  --max-width: 600px;
+  --height: 80%;
+  --border-radius: 16px;
+
+  ion-searchbar {
+    padding: 8px;
+  }
+
+  ion-list {
+    padding: 0;
+  }
+
+  ion-item {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --inner-padding-end: 10px;
+  }
+}
+
+/* Modal de éxito */
+.success-modal {
+  --width: 90%;
+  --max-width: 400px;
+  --border-radius: 16px;
+  --height: auto;
+  --background: var(--ion-background-color);
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: var(--ion-color-primary);
+    }
+
+    .modal-message {
+      font-size: 1.1rem;
+      margin-bottom: 24px;
+      color: var(--ion-text-color);
+    }
+
+    .modal-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      ion-button {
+        margin: 0;
+        height: 48px;
+        font-weight: 600;
+
+        &:first-child {
+          --background: var(--ion-color-success);
+          --background-hover: var(--ion-color-success-shade);
+        }
+      }
+    }
+  }
+}
